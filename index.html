@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vando Canais Sat</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Estilizando o container */
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        /* Estilizando os botões */
+        .button-container {
+            width: 20%;
+            text-align: left;
+            max-height: 100vh;
+            overflow-y: auto;
+            /* Adiciona a barra de rolagem vertical */
+        }
+
+        .channel-btn {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            position: relative;
+        }
+
+        .channel-btn.selected {
+            background-color: #0056b3;
+        }
+
+        .expand-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            font-size: 16px;
+            color: white;
+        }
+
+        .channel-btn.selected .expand-icon {
+            display: inline;
+        }
+
+        /* Estilizando o iframe */
+        iframe {
+            width: 75%;
+            height: 500px;
+            border: none;
+            margin-left: 20px;
+        }
+
+        /* Estilo da barra de busca */
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de busca -->
+    <input type="text" id="searchInput" placeholder="Buscar canal...">
+    <div class="container">
+        <div class="button-container">
+
+            <!-- Lista de canais -->
+            <div id="channelList"></div> <!-- Canal gerado dinamicamente -->
+        </div>
+
+        <iframe id="channelPlayer" allow="fullscreen" src=""></iframe>
+    </div>
+
+    <script>
+        let selectedButton = null;
+        let clickCount = 0;
+        let canaisData = []; // Armazena os canais carregados
+
+        function handleChannelClick(url, button) {
+            const player = document.getElementById('channelPlayer');
+            player.src = url;
+
+            // Incrementa o número de cliques
+            clickCount++;
+
+            // Resetar contagem de cliques se for um novo canal
+            if (selectedButton && selectedButton !== button) {
+                clickCount = 1; // Reseta o número de cliques
+            }
+
+            // Atualizar a seleção de botão
+            if (selectedButton) {
+                selectedButton.classList.remove('selected');
+            }
+            button.classList.add('selected');
+            selectedButton = button;
+        }
+
+        // Função para exibir a lista de canais
+        function displayChannels(canais) {
+            const channelList = document.getElementById('channelList');
+            channelList.innerHTML = ''; // Limpa a lista
+            canais.forEach(canal => {
+                const button = document.createElement('button');
+                button.className = 'channel-btn';
+                button.innerHTML = `${canal.nome} <span class="expand-icon">🔍</span>`;
+                button.onclick = () => handleChannelClick(canal.url, button);
+                channelList.appendChild(button);
+            });
+        }
+
+        // Carregar canais de um arquivo JSON
+        fetch('canais.json')
+            .then(response => response.json())
+            .then(data => {
+                canaisData = data.canais; // Armazena os canais para busca
+                displayChannels(canaisData); // Exibe os canais inicialmente
+            })
+            .catch(error => console.error('Erro ao carregar canais:', error));
+
+        // Filtrar canais com base na busca
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+            const filteredCanais = canaisData.filter(canal => canal.nome.toLowerCase().includes(searchTerm));
+            displayChannels(filteredCanais); // Exibe os canais filtrados
+        });
+    </script>
+</body>
+
+</html>

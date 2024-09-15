@@ -1,0 +1,445 @@
+{
+    "canaisFavoritos": [],
+    "canais": [
+        {
+            "nome": "Discovery Home and Health",
+            "url": "https://reidoscanais.eu/embed/?id=discoveryheh"
+        },
+        {
+            "nome": "Discovery Channel",
+            "url": "https://reidoscanais.eu/embed/?id=discoverychannel"
+        },
+        {
+            "nome": "Discovery Science",
+            "url": "https://reidoscanais.eu/embed/?id=discoveryscience"
+        },
+        {
+            "nome": "Globo",
+            "url": "https://embedmax.site/tvl/globobrasilia.php"
+        },
+        {
+            "nome": "SBT",
+            "url": "https://reidoscanais.eu/embed/?id=sbt"
+        },
+        {
+            "nome": "History",
+            "url": "https://reidoscanais.eu/embed/?id=history"
+        },
+        {
+            "nome": "History 2",
+            "url": "https://reidoscanais.app/embed/?id=history2"
+        },
+        {
+            "nome": "Adultswim",
+            "url": "https://reidoscanais.eu/embed/?id=adultswim"
+        },
+        {
+            "nome": "Cartoon Network",
+            "url": "https://reidoscanais.eu/embed/?id=cartoonnetwork"
+        },
+        {
+            "nome": "Tele Cine Premium",
+            "url": "https://embedmax.site/tvl/tcpremium.php"
+        },
+        {
+            "nome": "Tele Cine Pipoca",
+            "url": "https://embedmax.site/tvl/tcpipoca.php"
+        },
+        {
+            "nome": "Tele Cine Action",
+            "url": "https://embedmax.site/tvl/tcaction.php"
+        },
+        {
+            "nome": "Tele Cine Touch",
+            "url": "https://embedmax.site/tvl/tctouch.php"
+        },
+        {
+            "nome": "Tele Cine Fun",
+            "url": "https://embedmax.site/tvl/tcfun.php"
+        },
+        {
+            "nome": "Tele Cine Cult",
+            "url": "https://embedmax.site/tvl/tccult.php"
+        },
+        {
+            "nome": "Globo MG",
+            "url": "https://embedmax.site/tvl/globoMG.php"
+        },
+        {
+            "nome": "Globo SP",
+            "url": "https://embedmax.site/tvl/globoSP.php"
+        },
+        {
+            "nome": "Globo RJ",
+            "url": "https://embedmax.site/tvl/globoRJ.php"
+        },
+        {
+            "nome": "Globo Nordeste",
+            "url": "https://embedmax.site/tvl/globonordeste.php"
+        },
+        {
+            "nome": "Globo Brasília",
+            "url": "https://embedmax.site/tvl/globobrasilia.php"
+        },
+        {
+            "nome": "SBT",
+            "url": "https://embedmax.site/tvl/sbt.php"
+        },
+        {
+            "nome": "TV Brasil",
+            "url": "https://embedmax.site/tvl/tvbrasil.php"
+        },
+        {
+            "nome": "Band",
+            "url": "https://embedmax.site/tvl/band.php"
+        },
+        {
+            "nome": "Record SP",
+            "url": "https://embedmax.site/tvl/recordSP.php"
+        },
+        {
+            "nome": "ESPN 1",
+            "url": "https://embedmax.site/tvl/espn1.php"
+        },
+        {
+            "nome": "ESPN 2",
+            "url": "https://embedmax.site/tvl/espn2.php"
+        },
+        {
+            "nome": "ESPN 3",
+            "url": "https://embedmax.site/tvl/espn3.php"
+        },
+        {
+            "nome": "ESPN 4",
+            "url": "https://embedmax.site/tvl/espn4.php"
+        },
+        {
+            "nome": "ESPN 5",
+            "url": "https://embedmax.site/tvl/espn5.php"
+        },
+        {
+            "nome": "ESPN 6",
+            "url": "https://embedmax.site/tvl/espn6.php"
+        },
+        {
+            "nome": "Sportv 1",
+            "url": "https://embedmax.site/tvl/sportv1.php"
+        },
+        {
+            "nome": "Sportv 2",
+            "url": "https://embedmax.site/tvl/sportv2.php"
+        },
+        {
+            "nome": "Sportv 3",
+            "url": "https://embedmax.site/tvl/sportv3.php"
+        },
+        {
+            "nome": "Premiere 1",
+            "url": "https://embedmax.site/tvl/premiere1.php"
+        },
+        {
+            "nome": "Premiere 2",
+            "url": "https://embedmax.site/tvl/premiere2.php"
+        },
+        {
+            "nome": "Premiere 3",
+            "url": "https://embedmax.site/tvl/premiere3.php"
+        },
+        {
+            "nome": "Premiere 4",
+            "url": "https://embedmax.site/tvl/premiere4.php"
+        },
+        {
+            "nome": "Paramount Mais 1",
+            "url": "https://embedmax.site/tvl/paramountmais1.php"
+        },
+        {
+            "nome": "Paramount Mais 2",
+            "url": "https://embedmax.site/tvl/paramountmais2.php"
+        },
+        {
+            "nome": "Paramount Mais 3",
+            "url": "https://embedmax.site/tvl/paramountmais3.php"
+        },
+        {
+            "nome": "Paramount Mais 4",
+            "url": "https://embedmax.site/tvl/paramountmais4.php"
+        },
+        {
+            "nome": "Combate",
+            "url": "https://embedmax.site/tvl/combate.php"
+        },
+        {
+            "nome": "Cazé TV 1",
+            "url": "https://embedmax.site/tvl/cazetv1.php"
+        },
+        {
+            "nome": "Cazé TV 2",
+            "url": "https://embedmax.site/tvl/cazetv2.php"
+        },
+        {
+            "nome": "Cazé TV 3",
+            "url": "https://embedmax.site/tvl/cazetv3.php"
+        },
+        {
+            "nome": "Canal Goat 1",
+            "url": "https://embedmax.site/tvl/canalgoat1.php"
+        },
+        {
+            "nome": "Canal Goat 2",
+            "url": "https://embedmax.site/tvl/canalgoat2.php"
+        },
+        {
+            "nome": "Canal Goat 3",
+            "url": "https://embedmax.site/tvl/canalgoat3.php"
+        },
+        {
+            "nome": "UFC Fight Pass",
+            "url": "https://embedmax.site/tvl/ufcfightpass.php"
+        },
+        {
+            "nome": "BandSports",
+            "url": "https://embedmax.site/tvl/bandsports.php"
+        },
+        {
+            "nome": "TC Premium",
+            "url": "https://embedmax.site/tvl/tcpremium.php"
+        },
+        {
+            "nome": "TC Pipoca",
+            "url": "https://embedmax.site/tvl/tcpipoca.php"
+        },
+        {
+            "nome": "TC Action",
+            "url": "https://embedmax.site/tvl/tcaction.php"
+        },
+        {
+            "nome": "TC Touch",
+            "url": "https://embedmax.site/tvl/tctouch.php"
+        },
+        {
+            "nome": "TC Fun",
+            "url": "https://embedmax.site/tvl/tcfun.php"
+        },
+        {
+            "nome": "TC Cult",
+            "url": "https://embedmax.site/tvl/tccult.php"
+        },
+        {
+            "nome": "HBO",
+            "url": "https://embedmax.site/tvl/hbo.php"
+        },
+        {
+            "nome": "HBO 2",
+            "url": "https://embedmax.site/tvl/hbo2.php"
+        },
+        {
+            "nome": "HBO Plus",
+            "url": "https://embedmax.site/tvl/hboplus.php"
+        },
+        {
+            "nome": "HBO Family",
+            "url": "https://embedmax.site/tvl/hbofamily.php"
+        },
+        {
+            "nome": "HBO Signature",
+            "url": "https://embedmax.site/tvl/hbosignature.php"
+        },
+        {
+            "nome": "HBO Xtreme",
+            "url": "https://embedmax.site/tvl/hboxtreme.php"
+        },
+        {
+            "nome": "Discovery Channel",
+            "url": "https://embedmax.site/tvl/discoverychannel.php"
+        },
+        {
+            "nome": "Discovery World",
+            "url": "https://embedmax.site/tvl/discoveryworld.php"
+        },
+        {
+            "nome": "Discovery Turbo",
+            "url": "https://embedmax.site/tvl/discoveryturbo.php"
+        },
+        {
+            "nome": "Discovery ID",
+            "url": "https://embedmax.site/tvl/discoveryid.php"
+        },
+        {
+            "nome": "Discovery Kids",
+            "url": "https://embedmax.site/tvl/discoverykids.php"
+        },
+        {
+            "nome": "Discovery HEH",
+            "url": "https://embedmax.site/tvl/discoveryheh.php"
+        },
+        {
+            "nome": "Discovery Theater",
+            "url": "https://embedmax.site/tvl/discoverytheater.php"
+        },
+        {
+            "nome": "Discovery Science",
+            "url": "https://embedmax.site/tvl/discoveryscience.php"
+        },
+        {
+            "nome": "Comedy Central",
+            "url": "https://embedmax.site/tvl/comedycentral.php"
+        },
+        {
+            "nome": "Nick Jr",
+            "url": "https://embedmax.site/tvl/nickjr.php"
+        },
+        {
+            "nome": "Nickelodeon",
+            "url": "https://embedmax.site/tvl/nickelodeon.php"
+        },
+        {
+            "nome": "AMC",
+            "url": "https://embedmax.site/tvl/amc.php"
+        },
+        {
+            "nome": "AXN",
+            "url": "https://embedmax.site/tvl/axn.php"
+        },
+        {
+            "nome": "Bis",
+            "url": "https://embedmax.site/tvl/bis.php"
+        },
+        {
+            "nome": "Canal Brasil",
+            "url": "https://embedmax.site/tvl/canalbrasil.php"
+        },
+        {
+            "nome": "E!",
+            "url": "https://embedmax.site/tvl/e.php"
+        },
+        {
+            "nome": "FX",
+            "url": "https://embedmax.site/tvl/fx.php"
+        },
+        {
+            "nome": "Gloob",
+            "url": "https://embedmax.site/tvl/gloob.php"
+        },
+        {
+            "nome": "Gloobinho",
+            "url": "https://embedmax.site/tvl/gloobinho.php"
+        },
+        {
+            "nome": "GNT",
+            "url": "https://embedmax.site/tvl/gnt.php"
+        },
+        {
+            "nome": "History",
+            "url": "https://embedmax.site/tvl/history.php"
+        },
+        {
+            "nome": "History 2",
+            "url": "https://embedmax.site/tvl/history2.php"
+        },
+        {
+            "nome": "Megapix",
+            "url": "https://embedmax.site/tvl/megapix.php"
+        },
+        {
+            "nome": "Multishow",
+            "url": "https://embedmax.site/tvl/multishow.php"
+        },
+        {
+            "nome": "TNT",
+            "url": "https://embedmax.site/tvl/tnt.php"
+        },
+        {
+            "nome": "Canal Off",
+            "url": "https://embedmax.site/tvl/canaloff.php"
+        },
+        {
+            "nome": "Studio Universal",
+            "url": "https://embedmax.site/tvl/studiouniversal.php"
+        },
+        {
+            "nome": "SyFy",
+            "url": "https://embedmax.site/tvl/syfy.php"
+        },
+        {
+            "nome": "Cinemax",
+            "url": "https://embedmax.site/tvl/cinemax.php"
+        },
+        {
+            "nome": "Cinecanal",
+            "url": "https://embedmax.site/tvl/cinecanal.php"
+        },
+        {
+            "nome": "Paramount Network",
+            "url": "https://embedmax.site/tvl/paramountnetwork.php"
+        },
+        {
+            "nome": "Arte 1",
+            "url": "https://embedmax.site/tvl/arte1.php"
+        },
+        {
+            "nome": "Animal Planet",
+            "url": "https://embedmax.site/tvl/animalplanet.php"
+        },
+        {
+            "nome": "Cartoon Network",
+            "url": "https://embedmax.site/tvl/cartoonnetwork.php"
+        },
+        {
+            "nome": "Disney Channel",
+            "url": "https://embedmax.site/tvl/disneychannel.php"
+        },
+        {
+            "nome": "National Geographic",
+            "url": "https://embedmax.site/tvl/nationalgeographic.php"
+        },
+        {
+            "nome": "Sony Channel",
+            "url": "https://embedmax.site/tvl/sonychannel.php"
+        },
+        {
+            "nome": "Space",
+            "url": "https://embedmax.site/tvl/space.php"
+        },
+        {
+            "nome": "Star Channel",
+            "url": "https://embedmax.site/tvl/starchannel.php"
+        },
+        {
+            "nome": "Warner TV",
+            "url": "https://embedmax.site/tvl/warnertv.php"
+        },
+        {
+            "nome": "TLC",
+            "url": "https://embedmax.site/tvl/tlc.php"
+        },
+        {
+            "nome": "Viva",
+            "url": "https://embedmax.site/tvl/viva.php"
+        },
+        {
+            "nome": "A&E",
+            "url": "https://embedmax.site/tvl/ae.php"
+        },
+        {
+            "nome": "GloboNews",
+            "url": "https://embedmax.site/tvl/globonews.php"
+        },
+        {
+            "nome": "CNN Brasil",
+            "url": "https://embedmax.site/tvl/cnnbrasil.php"
+        },
+        {
+            "nome": "Band News",
+            "url": "https://embedmax.site/tvl/bandnews.php"
+        },
+        {
+            "nome": "Jovem Pan",
+            "url": "https://embedmax.site/tvl/jovempan.php"
+        },
+        {
+            "nome": "Record News",
+            "url": "https://embedmax.site/tvl/recordnews2.php"
+        }
+    ]
+}
