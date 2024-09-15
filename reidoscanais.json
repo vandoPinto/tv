@@ -14,6 +14,13 @@
         "epg": "#"
     },
     {
+        "titulo": "TLC",
+        "categoria": "Entretenimento",
+        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/74\/TLC_Logo.svg\/512px-TLC_Logo.svg.png",
+        "url": "https:\/\/reidoscanais.me\/embed\/?id=tlc",
+        "epg": "#"
+    },
+    {
         "titulo": "Discovery Science",
         "categoria": "Entretenimento",
         "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8b\/Discovery_science_new_logo_2017.png\/512px-Discovery_science_new_logo_2017.png",
@@ -1124,13 +1131,6 @@
         "categoria": "Entretenimento",
         "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/36\/TruTV_2014.svg\/512px-TruTV_2014.svg.png",
         "url": "https:\/\/reidoscanais.me\/embed\/?id=trutv",
-        "epg": "#"
-    },
-    {
-        "titulo": "TLC",
-        "categoria": "Entretenimento",
-        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/74\/TLC_Logo.svg\/512px-TLC_Logo.svg.png",
-        "url": "https:\/\/reidoscanais.me\/embed\/?id=tlc",
         "epg": "#"
     },
     {
