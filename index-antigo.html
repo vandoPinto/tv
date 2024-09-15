@@ -100,9 +100,21 @@
         let selectedButton = null;
         let clickCount = 0;
         let canaisData = []; // Armazena os canais carregados
-        var filteredCanais = [];
 
         function handleChannelClick(url, button) {
+            // window.open(url, '_blank');
+            // return
+            const player = document.getElementById('channelPlayer');
+            player.src = url;
+
+            // Incrementa o número de cliques
+            clickCount++;
+
+            // Resetar contagem de cliques se for um novo canal
+            if (selectedButton && selectedButton !== button) {
+                clickCount = 1; // Reseta o número de cliques
+            }
+
             // Atualizar a seleção de botão
             if (selectedButton) {
                 selectedButton.classList.remove('selected');
@@ -110,20 +122,15 @@
             button.classList.add('selected');
             selectedButton = button;
 
-            const player = document.getElementById('channelPlayer');
-            player.src = url;
-
-            // Adiciona um ouvinte para verificar quando o iframe está carregado
+            // Centralizar o cursor (ou conteúdo) no iframe após a mudança
             player.onload = function () {
-                // Esperar 1 segundo antes de dar play
-                setTimeout(() => {
-                    player.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-                }, 1000); // 1 segundo de atraso
+                const iframeDocument = player.contentDocument || player.contentWindow.document;
+                iframeDocument.body.scrollTo({
+                    top: (iframeDocument.body.scrollHeight / 2) - (player.clientHeight / 2),
+                    left: (iframeDocument.body.scrollWidth / 2) - (player.clientWidth / 2),
+                    behavior: 'smooth'
+                });
             };
-
-            // Limpar a barra de busca e exibir todos os canais
-            document.getElementById('searchInput').value = '';
-            displayChannels(canaisData);
         }
 
         // Função para exibir a lista de canais
@@ -133,17 +140,17 @@
             canais.forEach(canal => {
                 const button = document.createElement('button');
                 button.className = 'channel-btn';
-                button.innerHTML = `<img src="${canal.img}" alt="${canal.titulo}" width="30" height="30" style="vertical-align: middle; margin-right: 10px;"> ${canal.titulo} <span class="expand-icon">🔍</span>`;
+                button.innerHTML = `${canal.nome} <span class="expand-icon">🔍</span>`;
                 button.onclick = () => handleChannelClick(canal.url, button);
                 channelList.appendChild(button);
             });
         }
 
         // Carregar canais de um arquivo JSON
-        fetch('reidoscanais.json')
+        fetch('canais.json')
             .then(response => response.json())
             .then(data => {
-                canaisData = data; // Armazena os canais para busca
+                canaisData = data.canais; // Armazena os canais para busca
                 displayChannels(canaisData); // Exibe os canais inicialmente
             })
             .catch(error => console.error('Erro ao carregar canais:', error));
@@ -151,11 +158,9 @@
         // Filtrar canais com base na busca
         document.getElementById('searchInput').addEventListener('input', function () {
             const searchTerm = this.value.toLowerCase();
-            filteredCanais = canaisData.filter(canal => canal.titulo.toLowerCase().includes(searchTerm));
+            const filteredCanais = canaisData.filter(canal => canal.nome.toLowerCase().includes(searchTerm));
             displayChannels(filteredCanais); // Exibe os canais filtrados
         });
-
-
     </script>
 </body>
 
