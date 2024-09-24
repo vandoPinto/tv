@@ -7,6 +7,13 @@
         "epg": "#"
     },
     {
+        "titulo": "Discovery H&H 2",
+        "categoria": "Entretenimento",
+        "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/90\/Discovery_H%26H_Logo_2022.webp\/500px-Discovery_H%26H_Logo_2022.webp.png",
+        "url": "https:\/\/\/\/embedmax.site\/tvl\/discoveryheh.php",
+        "epg": "#"
+    },
+    {
         "titulo": "Discovery Channel",
         "categoria": "Entretenimento",
         "img": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f1\/2019_Discovery_logo.svg\/512px-2019_Discovery_logo.svg.png",
